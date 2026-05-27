@@ -1,0 +1,380 @@
+/* ============================================================
+   Angela Xu — Personal Blog
+   Refined & Classical Theme — Left Sidebar Layout
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@300;400;500&display=swap');
+
+/* === Reset === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* === Variables === */
+:root {
+  --navy:        #1C2B3A;
+  --navy-deep:   #111D28;
+  --navy-mid:    #243648;
+  --gold:        #B8935A;
+  --gold-light:  #D4AF7A;
+  --cream:       #FAF7F1;
+  --cream-dark:  #F0EBE1;
+  --cream-panel: #EDE5D8;
+  --ink:         #1E1E1E;
+  --ink-soft:    #3A3530;
+  --muted:       #7A7268;
+  --rule:        #D8D0C4;
+  --burgundy:    #7A2030;
+  --sidebar-w:   230px;
+  --serif-head:  'Playfair Display', Georgia, 'Times New Roman', serif;
+  --serif-body:  'EB Garamond', Georgia, 'Times New Roman', serif;
+  --serif-nav:   'Cormorant Garamond', Georgia, serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--serif-body);
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--ink);
+  background: var(--cream);
+  min-height: 100vh;
+}
+
+/* === Site Header (full width) === */
+.site-header {
+  background: var(--navy-deep);
+  color: var(--cream);
+  padding: 2.8rem 3rem 2.2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  border-bottom: 2px solid var(--gold);
+}
+
+.site-name {
+  font-family: var(--serif-head);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--cream);
+  white-space: nowrap;
+}
+
+.site-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-tagline {
+  font-family: var(--serif-nav);
+  font-size: 0.88rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  opacity: 0.8;
+}
+
+/* === Page Body (sidebar + content) === */
+.page-body {
+  display: flex;
+  min-height: calc(100vh - 120px);
+}
+
+/* === Left Sidebar === */
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  background: var(--cream-panel);
+  border-right: 1px solid var(--rule);
+  padding: 3rem 0 3rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-section-label {
+  font-family: var(--serif-nav);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 1.8rem 1rem;
+  display: block;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 0.5rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  font-family: var(--serif-head);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--navy-mid);
+  text-decoration: none;
+  padding: 0.65rem 1.8rem;
+  border-left: 3px solid transparent;
+  transition: color 0.2s, background 0.15s, border-color 0.2s;
+  line-height: 1.3;
+}
+
+.sidebar nav ul li a:hover {
+  color: var(--navy-deep);
+  background: rgba(28,43,58,0.06);
+  border-left-color: var(--gold);
+}
+
+.sidebar nav ul li a.active {
+  color: var(--navy-deep);
+  background: rgba(28,43,58,0.08);
+  border-left-color: var(--gold);
+  font-weight: 600;
+}
+
+/* === Main Content === */
+.main-content {
+  flex: 1;
+  padding: 3.5rem 4rem 5rem 3.5rem;
+  max-width: 760px;
+  background: var(--cream);
+}
+
+/* === Page Title === */
+.page-title {
+  font-family: var(--serif-head);
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 400;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+}
+
+.page-rule {
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+  margin: 0.8rem 0 2.2rem;
+}
+
+/* === Intro text === */
+.intro {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+  font-style: italic;
+  line-height: 1.75;
+}
+
+/* === Entry List === */
+.entry-list { list-style: none; }
+
+.entry {
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.entry:last-child { border-bottom: none; }
+
+.entry-meta {
+  font-family: var(--serif-nav);
+  font-size: 0.82rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.entry-meta .tag {
+  color: var(--gold);
+  margin-right: 0.5rem;
+}
+
+.entry h2 {
+  font-family: var(--serif-head);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+.entry h2 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.entry h2 a:hover { color: var(--burgundy); }
+
+.entry-excerpt {
+  font-size: 0.97rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-family: var(--serif-nav);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.read-more:hover { border-color: var(--gold); }
+
+/* === Poetry === */
+.poem {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.poem:last-child { border-bottom: none; }
+
+.poem-title {
+  font-family: var(--serif-head);
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--navy);
+  margin-bottom: 1.2rem;
+}
+
+.poem-body {
+  font-size: 1rem;
+  line-height: 2.1;
+  color: var(--ink-soft);
+  white-space: pre-line;
+}
+
+/* === Books === */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.book-card { display: flex; flex-direction: column; }
+
+.book-spine {
+  width: 100%;
+  aspect-ratio: 2/3;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.2rem 0.8rem;
+  margin-bottom: 0.7rem;
+  position: relative;
+}
+.book-spine::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: var(--gold);
+}
+.book-spine-title {
+  font-family: var(--serif-head);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1.4;
+}
+.book-author {
+  font-family: var(--serif-nav);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+.book-note {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* === Homepage === */
+.home-placeholder {
+  padding: 2.5rem 0 1rem;
+  color: var(--muted);
+}
+.home-placeholder p {
+  font-family: var(--serif-head);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* === Placeholder === */
+.placeholder {
+  text-align: center;
+  padding: 3.5rem 2rem;
+  border: 1px dashed var(--rule);
+  color: var(--muted);
+}
+.placeholder .ornament {
+  font-size: 1.4rem;
+  color: var(--gold);
+  opacity: 0.5;
+  margin-bottom: 0.8rem;
+}
+.placeholder p {
+  font-family: var(--serif-nav);
+  font-size: 0.9rem;
+  font-style: italic;
+  letter-spacing: 0.06em;
+}
+
+/* === Footer === */
+footer {
+  background: var(--navy-deep);
+  color: rgba(250,247,241,0.45);
+  text-align: center;
+  padding: 2rem;
+  font-family: var(--serif-nav);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  border-top: 1px solid rgba(184,147,90,0.2);
+}
+footer a {
+  color: var(--gold-light);
+  text-decoration: none;
+  opacity: 0.8;
+}
+footer a:hover { opacity: 1; }
+
+/* === Responsive === */
+@media (max-width: 720px) {
+  .site-header { padding: 1.8rem 1.4rem; flex-direction: column; gap: 0.4rem; }
+  .page-body { flex-direction: column; }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 1.2rem 0 0.5rem;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sidebar nav ul { display: flex; flex-wrap: wrap; }
+  .sidebar nav ul li a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav ul li a.active,
+  .sidebar nav ul li a:hover { border-left: none; border-bottom-color: var(--gold); background: none; }
+  .main-content { padding: 2.5rem 1.5rem 4rem; max-width: 100%; }
+  .sidebar-section-label { display: none; }
+}
