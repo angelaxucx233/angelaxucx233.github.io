@@ -9,64 +9,51 @@
 <body>
 
   <header class="site-header">
-    <div class="site-name">Angela Xu</div>
+    <div class="site-name"><a href="index.html">Angela Xu</a></div>
     <div class="site-tagline">Essays &middot; Poetry &middot; Contemplations</div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="published.html">Published</a></li>
-      <li><a href="poetry.html" class="active">Poetry</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="world.html">World</a></li>
-      <li><a href="contemplations.html">Contemplations</a></li>
-    </ul>
-  </nav>
+  <div class="page-body">
 
-  <main>
-    <h1 class="page-title">Poetry</h1>
-    <div class="page-rule">
-      <span></span>
-      <em>Verses written in the margins of other things</em>
-      <span></span>
-    </div>
+    <aside class="sidebar">
+      <span class="sidebar-section-label">Contents</span>
+      <nav>
+        <ul>
+          <li><a href="published.html">I. Published</a></li>
+          <li><a href="poetry.html" class="active">II. Poetry</a></li>
+          <li><a href="books.html">III. Books</a></li>
+          <li><a href="world.html">IV. World</a></li>
+          <li><a href="contemplations.html">V. Contemplations</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-    <p class="intro">
-      Poetry has always arrived at odd hours — on trains, in waiting rooms,
-      during long silences. These are poems that wanted to be written.
-    </p>
+    <main class="main-content">
+      <h1 class="page-title">II. Poetry</h1>
+      <div class="page-rule"></div>
 
-    <!-- ═══════════════════════════════════════════════════
-         TO ADD A POEM: Copy the <div class="poem">...</div>
-         block below and fill in your poem.
-         Line breaks within .poem-body are preserved.
-         ═══════════════════════════════════════════════════ -->
+      <!-- Add poems here. Copy the block below for each poem:
 
-    <!-- EXAMPLE POEM — replace with your own -->
-    <div class="poem">
-      <div class="entry-meta"><span class="tag">Poem</span> Spring 2026</div>
-      <div class="poem-title">Title of Your Poem</div>
-      <div class="poem-body">First line of your poem here,
-second line follows naturally.
+      <div class="poem">
+        <div class="poem-title">Title of the Poem</div>
+        <div class="entry-meta">Month Year</div>
+        <pre class="poem-body">
+Your poem lines go here.
+Each line as written.
+        </pre>
+      </div>
 
-A stanza break is just a blank line.
-The form will hold it.</div>
-    </div>
+      -->
 
-    <!-- ADD MORE POEMS ABOVE THIS LINE -->
+      <div class="placeholder">
+        <div class="ornament">✦</div>
+        <p>Verses forthcoming.</p>
+      </div>
+    </main>
 
-    <!-- Uncomment this when list is empty:
-    <div class="placeholder">
-      <div class="ornament">✦</div>
-      <p>Poems will appear here as they are written.</p>
-    </div>
-    -->
-
-  </main>
+  </div>
 
   <footer>
-    <div class="footer-rule"></div>
     <p>Angela Xu &nbsp;&middot;&nbsp; <a href="https://github.com/angelaxucx233" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 

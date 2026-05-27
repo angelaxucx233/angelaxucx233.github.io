@@ -9,72 +9,50 @@
 <body>
 
   <header class="site-header">
-    <div class="site-name">Angela Xu</div>
+    <div class="site-name"><a href="index.html">Angela Xu</a></div>
     <div class="site-tagline">Essays &middot; Poetry &middot; Contemplations</div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="published.html" class="active">Published</a></li>
-      <li><a href="poetry.html">Poetry</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="world.html">World</a></li>
-      <li><a href="contemplations.html">Contemplations</a></li>
-    </ul>
-  </nav>
+  <div class="page-body">
 
-  <main>
-    <h1 class="page-title">Published</h1>
-    <div class="page-rule">
-      <span></span>
-      <em>Essays and pieces published elsewhere</em>
-      <span></span>
-    </div>
+    <aside class="sidebar">
+      <span class="sidebar-section-label">Contents</span>
+      <nav>
+        <ul>
+          <li><a href="published.html" class="active">I. Published</a></li>
+          <li><a href="poetry.html">II. Poetry</a></li>
+          <li><a href="books.html">III. Books</a></li>
+          <li><a href="world.html">IV. World</a></li>
+          <li><a href="contemplations.html">V. Contemplations</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-    <p class="intro">
-      A collection of essays, articles, and longer pieces that have appeared in
-      other publications or venues. Each carries something of the thinking
-      that goes on in the other sections of this site.
-    </p>
+    <main class="main-content">
+      <h1 class="page-title">I. Published</h1>
+      <div class="page-rule"></div>
 
-    <!-- ═══════════════════════════════════════════════════
-         TO ADD AN ENTRY: Copy the <li class="entry">...</li>
-         block below and fill in your details.
-         ═══════════════════════════════════════════════════ -->
+      <!-- Add published essays here. Copy the block below for each piece:
 
-    <ul class="entry-list">
+      <ul class="entry-list">
+        <li class="entry">
+          <div class="entry-meta">Month Year &nbsp;&middot;&nbsp; Publication Name</div>
+          <h2><a href="link-to-piece">Title of the Essay</a></h2>
+          <p class="entry-excerpt">A short description of the piece.</p>
+        </li>
+      </ul>
 
-      <!-- EXAMPLE ENTRY — replace with your own -->
-      <li class="entry">
-        <div class="entry-meta">
-          <span class="tag">Essay</span>
-          January 2026 &nbsp;&middot;&nbsp; <em>Publication Name</em>
-        </div>
-        <h2><a href="#">Title of Your Published Piece</a></h2>
-        <p class="entry-excerpt">
-          A brief excerpt or description of what this piece is about and where it appeared.
-          You can link directly to the publication above.
-        </p>
-        <a href="#" class="read-more">Read &rarr;</a>
-      </li>
+      -->
 
-      <!-- ADD YOUR ENTRIES ABOVE THIS LINE -->
+      <div class="placeholder">
+        <div class="ornament">✦</div>
+        <p>Essays forthcoming.</p>
+      </div>
+    </main>
 
-    </ul>
-
-    <!-- Show this block when list is empty — remove once you have entries -->
-    <!--
-    <div class="placeholder">
-      <div class="ornament">✦</div>
-      <p>Published pieces will appear here.</p>
-    </div>
-    -->
-
-  </main>
+  </div>
 
   <footer>
-    <div class="footer-rule"></div>
     <p>Angela Xu &nbsp;&middot;&nbsp; <a href="https://github.com/angelaxucx233" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 
