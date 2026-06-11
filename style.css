@@ -336,6 +336,66 @@ body {
   letter-spacing: 0.06em;
 }
 
+/* === Newsletter Signup === */
+.signup-section {
+  max-width: 480px;
+  padding: 2rem 0 1rem;
+  border-top: 1px solid var(--rule);
+  margin-top: 1rem;
+}
+.signup-heading {
+  font-family: var(--serif-head);
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.signup-text {
+  font-size: 0.97rem;
+  color: var(--ink-soft);
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+}
+.signup-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.signup-input {
+  flex: 1;
+  font-family: var(--serif-body);
+  font-size: 0.97rem;
+  color: var(--ink);
+  background: var(--cream-dark);
+  border: 1px solid var(--rule);
+  padding: 0.55rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.signup-input:focus { border-color: var(--gold); }
+.signup-btn {
+  font-family: var(--serif-nav);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--navy);
+  border: none;
+  padding: 0.55rem 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.signup-btn:hover { background: var(--navy-mid); }
+.signup-note {
+  font-family: var(--serif-nav);
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.signup-note a { color: var(--gold); text-decoration: none; }
+
 /* === Footer === */
 footer {
   background: var(--navy-deep);
