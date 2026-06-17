@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angela Xu</title>
+    <link>https://angelaxucx233.github.io</link>
+    <description>World · Markets · Essays · Poetry · Philosophy</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://angelaxucx233.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>On Ethics</title>
+      <link>https://angelaxucx233.github.io/philosophy-ethics.html</link>
+      <description>Reflections on Simon Blackburn's Ethics: A Very Short Introduction — on the foundations of Western and East Asian ethics, the Dao and Lady Wisdom, paternalism, and the role of time in moral judgment.</description>
+      <pubDate>Mon, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://angelaxucx233.github.io/philosophy-ethics.html</guid>
+    </item>
+
+    <item>
+      <title>On Knowledge</title>
+      <link>https://angelaxucx233.github.io/philosophy-knowledge.html</link>
+      <description>Reflections on Jennifer Nagel's Knowledge: A Very Short Introduction — from the classical analysis of justified true belief to communal knowledge structures, the perspicuity of truth, and the unsolved problem of deceit.</description>
+      <pubDate>Sat, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://angelaxucx233.github.io/philosophy-knowledge.html</guid>
+    </item>
+
+  </channel>
+</rss>
