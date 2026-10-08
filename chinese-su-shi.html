@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>苏轼 | Su Shi — Angela Xu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .essay-subtitle {
+      font-family: var(--serif-nav);
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-family: var(--serif-nav);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .back-link:hover { border-color: var(--gold); }
+    .back-link::before { content: '← '; }
+    .intro-text {
+      font-size: 1.02rem;
+      line-height: 1.9;
+      color: var(--ink-soft);
+      margin-bottom: 2.4rem;
+    }
+    .poem-section {
+      margin-bottom: 3rem;
+    }
+    .poem-title-zh {
+      font-family: var(--serif-head);
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+      margin-top: 2.8rem;
+    }
+    .poem-title-en {
+      font-family: var(--serif-head);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--ink-soft);
+      margin-bottom: 1.4rem;
+    }
+    .poem-preface {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 1.4rem;
+      padding: 0.8rem 0 0.8rem 1.4rem;
+      border-left: 2px solid var(--rule);
+    }
+    .poem-preface p {
+      font-family: var(--serif-nav);
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: var(--muted);
+      letter-spacing: 0.03em;
+      font-style: italic;
+      margin-bottom: 0.2rem;
+    }
+    .parallel-stanza {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 1.6rem;
+      padding-left: 1.4rem;
+      border-left: 2px solid var(--rule);
+    }
+    @media (max-width: 640px) {
+      .parallel-stanza { grid-template-columns: 1fr; gap: 0.8rem; }
+      .poem-preface { grid-template-columns: 1fr; gap: 0.5rem; }
+    }
+    .parallel-chinese p {
+      font-size: 1.05rem;
+      line-height: 2;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+      font-family: var(--serif-body);
+    }
+    .parallel-english p {
+      font-size: 1.02rem;
+      line-height: 1.9;
+      color: var(--ink-soft);
+      margin-bottom: 0.3rem;
+    }
+    .poem-section-divider {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.8rem 0;
+    }
+    .fn-ref a {
+      font-size: 0.72rem;
+      vertical-align: super;
+      line-height: 0;
+      color: var(--gold);
+      text-decoration: none;
+      font-family: var(--serif-nav);
+    }
+    .fn-ref a:hover { text-decoration: underline; }
+    .footnotes {
+      margin-top: 2.4rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--rule);
+      font-family: var(--serif-nav);
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      list-style: decimal;
+      padding-left: 1.4rem;
+    }
+    .footnotes li {
+      margin-bottom: 0.55rem;
+      line-height: 1.7;
+    }
+    .footnotes li a {
+      color: var(--gold);
+      text-decoration: none;
+      margin-right: 0.3rem;
+    }
+    .source-note {
+      font-family: var(--serif-nav);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 2rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--rule);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-name"><a href="index.html">Angela Xu</a></div>
+    <div class="site-tagline">World &middot; Markets &middot; Essays &middot; Poetry &middot; Philosophy &middot; Chinese</div>
+  </header>
+
+  <div class="page-body">
+
+    <aside class="sidebar">
+      <span class="sidebar-section-label">Contents</span>
+      <nav>
+        <ul>
+          <li><a href="published.html">I. Published</a></li>
+          <li><a href="poetry.html">II. Poetry</a></li>
+          <li><a href="books.html">III. Books</a></li>
+          <li><a href="world.html">IV. World</a></li>
+          <li><a href="markets.html">V. Markets</a></li>
+          <li><a href="contemplations.html">VI. Philosophy</a></li>
+          <li><a href="chinese.html" class="active">VII. Chinese</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <a href="chinese.html" class="back-link">Chinese</a>
+
+      <p class="essay-subtitle">Classical Chinese &nbsp;&middot;&nbsp; October 2026</p>
+      <h1 class="page-title">苏轼</h1>
+      <p style="font-family: var(--serif-head); font-size: 1.1rem; font-style: italic; color: var(--ink-soft); letter-spacing: 0.01em; margin-bottom: 0.5rem;">
+        Two Poems by Su Shi
+      </p>
+      <p style="font-family: var(--serif-nav); font-size: 0.88rem; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.6rem;">
+        Su Shi (Su Dongpo) &nbsp;&middot;&nbsp; Song Dynasty
+      </p>
+      <div class="page-rule"></div>
+
+      <div class="essay-body">
+
+        <p class="intro-text">So far in my (shallow) exploration of Chinese poetry, my favorite poet has been Su Shi. Su Dongpo was a Song Dynasty statesman, master poet and essayist as well as renowned in calligraphy, painting, and architecture among others &mdash; a true Renaissance Man in the category of Leonardo da Vinci.</p>
+
+        <p class="intro-text">Among the classical poetry pieces, much of which focuses on themes like political exile, ambition and frustration, grief and loneliness of war, I find Su Dongpo&rsquo;s poetry to be comparably more playful, creative, and illuminatingly brilliant. He was known for greatly expanding the range, subject matter, and expressive capacity of contemporary <em>ci</em> poetry and brought it to a level on par with the more recognized <em>shi</em> as a form of serious poetry. The <em>ci</em> form was set to established melodic chants and embodied a graceful, flowing form of beauty emblematic of the Song. Previously, it was a genre connected with banquet and courtesan culture &mdash; a feminine and private world.</p>
+
+        <p class="intro-text">I have also taken some liberties with translation in certain parts as to make the poem more intelligible in English and to communicate some nuances of meaning.</p>
+
+        <!-- POEM ONE -->
+        <div class="poem-section">
+          <p class="poem-title-zh">《水调歌头 &middot; 明月几时有》</p>
+          <p class="poem-title-en">"When Did the Bright Moon Come to Be"</p>
+
+          <div class="poem-preface">
+            <div>
+              <p>丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。</p>
+            </div>
+            <div>
+              <p>Mid-Autumn, 1076. I joyfully feasted until dawn and composed this poem while greatly drunk. Longing for my brother, ZiYou.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>明月几时有？把酒问青天。</p>
+            </div>
+            <div class="parallel-english">
+              <p>&ldquo;When did the bright moon come to be?&rdquo;</p>
+              <p>I raise my goblet<sup id="ref-1" class="fn-ref"><a href="#fn-1">1</a></sup> to the azure sky.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>不知天上宫阙，今夕是何年。</p>
+            </div>
+            <div class="parallel-english">
+              <p>In the moon&rsquo;s palace above<sup id="ref-2" class="fn-ref"><a href="#fn-2">2</a></sup>,</p>
+              <p>I know not which year it is tonight.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>我欲乘风归去，又恐琼楼玉宇，高处不胜寒。</p>
+            </div>
+            <div class="parallel-english">
+              <p>I wish to ride the wind and go there</p>
+              <p>but am worried that in her jeweled palaces and jadeite pavilions,</p>
+              <p>I shall not be able to bear the chill.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>起舞弄清影，何似在人间。</p>
+            </div>
+            <div class="parallel-english">
+              <p>I dance and play with my limpid silhouette &mdash;</p>
+              <p>indeed<sup id="ref-3" class="fn-ref"><a href="#fn-3">3</a></sup> where else is like the human realm?!</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>转朱阁，低绮户，照无眠。</p>
+            </div>
+            <div class="parallel-english">
+              <p>Turning about the vermillion tower,</p>
+              <p>peeking beneath the carved lattices<sup id="ref-4" class="fn-ref"><a href="#fn-4">4</a></sup>,</p>
+              <p>shining on the sleepless &mdash;</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>不应有恨，何事长向别时圆？</p>
+            </div>
+            <div class="parallel-english">
+              <p>&ldquo;Surely you have no cause to bear a grudge &mdash;</p>
+              <p>But why must you ever wax full when we are parted?&rdquo;</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>人有悲欢离合，月有阴晴圆缺，此事古难全。</p>
+            </div>
+            <div class="parallel-english">
+              <p>People have sorrow, joy, parting, and meeting;</p>
+              <p>the moon darkens, brightens, waxes and wanes in its turn &mdash;</p>
+              <p>since of old, these things have rarely been whole.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>但愿人长久，千里共婵娟。</p>
+            </div>
+            <div class="parallel-english">
+              <p>But I wish that we each may remain long</p>
+              <p>and together delight in the same moon across a thousand miles.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="poem-section-divider" />
+
+        <!-- POEM TWO -->
+        <div class="poem-section">
+          <p class="poem-title-zh">《江城子 &middot; 密州出猎》</p>
+          <p class="poem-title-en">&ldquo;Hunting at Mi Zhou&rdquo;</p>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>老夫聊发少年狂，</p>
+              <p>左牵黄，右擎苍。</p>
+              <p>锦帽貂裘，千骑卷平冈。</p>
+            </div>
+            <div class="parallel-english">
+              <p>This old man suddenly had a fit of youthful madness &mdash;</p>
+              <p>a leashed yellow hound on my left,</p>
+              <p>a hawk borne high on my right.</p>
+              <p>In a brocade hat and sable coat,</p>
+              <p>behind me<sup id="ref-5" class="fn-ref"><a href="#fn-5">5</a></sup>, a thousand riders roll across the open plain.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>为报倾城随太守，</p>
+              <p>亲射虎，看孙郎。</p>
+            </div>
+            <div class="parallel-english">
+              <p>To repay this city for following their governor,</p>
+              <p>I shall shoot a tiger myself &mdash;</p>
+              <p>they shall watch the young lord Sun<sup id="ref-6" class="fn-ref"><a href="#fn-6">6</a></sup>!</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>酒酣胸胆尚开张。</p>
+              <p>鬓微霜，又何妨！</p>
+            </div>
+            <div class="parallel-english">
+              <p>Wine-flushed, my heart and courage nevertheless inflamed and emboldened<sup id="ref-7" class="fn-ref"><a href="#fn-7">7</a></sup> &mdash;</p>
+              <p>a little gray at the temples, but what does it matter!</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>持节云中，何日遣冯唐？</p>
+            </div>
+            <div class="parallel-english">
+              <p>Oh, when will my lord dispatch Feng Tang to Yunzhong with the imperial command?<sup id="ref-8" class="fn-ref"><a href="#fn-8">8</a></sup></p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>会挽雕弓如满月，</p>
+              <p>西北望，射天狼。</p>
+            </div>
+            <div class="parallel-english">
+              <p>Then, drawing my carven bow full as the moon,</p>
+              <p>I shall turn to the Northwest</p>
+              <p>and shoot the Wolf of Heaven.<sup id="ref-9" class="fn-ref"><a href="#fn-9">9</a></sup></p>
+            </div>
+          </div>
+        </div>
+
+        <ol class="footnotes">
+          <li id="fn-1"><a href="#ref-1">↑</a> Assumed wine/alcohol beverage.</li>
+          <li id="fn-2"><a href="#ref-2">↑</a> The word &ldquo;moon&rsquo;s&rdquo; is inserted for clarity in this line &mdash; absent from the original text.</li>
+          <li id="fn-3"><a href="#ref-3">↑</a> &ldquo;Indeed&rdquo; here is placed for emphasis and is not contained in the original text.</li>
+          <li id="fn-4"><a href="#ref-4">↑</a> The original text says &ldquo;hanging low upon the carved lattices.&rdquo; I took some liberties with the translation here to emphasize the personification of the moon and the playfulness of the tone.</li>
+          <li id="fn-5"><a href="#ref-5">↑</a> This phrase is inserted; absent in the original text.</li>
+          <li id="fn-6"><a href="#ref-6">↑</a> The founding king of Wu during the Three Kingdoms era, who once famously killed a tiger on a hunt.</li>
+          <li id="fn-7"><a href="#ref-7">↑</a> The word-for-word translation is &ldquo;wine-flushed, my chest and gallbladder nevertheless open wide.&rdquo;</li>
+          <li id="fn-8"><a href="#ref-8">↑</a> This is a reference to the story of Wei Shang during the Han Dynasty, who despite being an able, loyal, and generous commander, was dismissed and penalized for a clerical error. Feng Tang took note of his situation and remonstrated with the Emperor on his behalf. The Emperor eventually sent Feng Tang with the imperial seal to pardon and reinstate Wei Shang in Yunzhong. Here, Su Shi is expressing his aggrievement and frustration at not being given more important responsibilities within the court.</li>
+          <li id="fn-9"><a href="#ref-9">↑</a> The last line expresses his ambition at accomplishing a great work despite his relative age &mdash; here referring to the contemporary incursions by nomadic peoples into the Song&rsquo;s Northwest border. The Sirius star, or Heavenly Wolf, was said to be the star governing war, invasions, and raiding. Su Dongpo refers to his desire to contribute and accomplish a work of renown in the protection of the Song frontier.</li>
+        </ol>
+
+        <p class="source-note">Translation by Angela Xu. Original poems by Su Shi (苏轼, 1037&ndash;1101), Song Dynasty.</p>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+    <p>Angela Xu &nbsp;&middot;&nbsp; <a href="https://github.com/angelaxucx233" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
