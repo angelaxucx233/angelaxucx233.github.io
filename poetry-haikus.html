@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haikus — Angela Xu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-family: var(--serif-nav);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .back-link:hover { border-color: var(--gold); }
+    .back-link::before { content: '← '; }
+    .essay-subtitle {
+      font-family: var(--serif-nav);
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .haiku-section {
+      margin-bottom: 3rem;
+    }
+    .haiku-title {
+      font-family: var(--serif-head);
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 1.2rem;
+      margin-top: 2.4rem;
+    }
+    .haiku-body {
+      font-family: var(--serif-body);
+      font-size: 1.02rem;
+      line-height: 1.9;
+      color: var(--ink-soft);
+      white-space: pre-line;
+      padding-left: 1.4rem;
+      border-left: 2px solid var(--rule);
+    }
+    .source-note {
+      font-family: var(--serif-nav);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 2.8rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--rule);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-name"><a href="index.html">Angela Xu</a></div>
+    <div class="site-tagline">World &middot; Markets &middot; Essays &middot; Poetry &middot; Philosophy &middot; Chinese</div>
+  </header>
+
+  <div class="page-body">
+
+    <aside class="sidebar">
+      <span class="sidebar-section-label">Contents</span>
+      <nav>
+        <ul>
+          <li><a href="published.html">I. Published</a></li>
+          <li><a href="poetry.html" class="active">II. Poetry</a></li>
+          <li><a href="books.html">III. Books</a></li>
+          <li><a href="world.html">IV. World</a></li>
+          <li><a href="markets.html">V. Markets</a></li>
+          <li><a href="contemplations.html">VI. Philosophy</a></li>
+          <li><a href="chinese.html">VII. Chinese</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <a href="poetry.html" class="back-link">Poetry</a>
+
+      <p class="essay-subtitle">2026</p>
+      <h1 class="page-title">Haikus</h1>
+      <div class="page-rule"></div>
+
+      <div class="essay-body">
+
+        <div class="haiku-section">
+          <h2 class="haiku-title">Morning</h2>
+          <div class="haiku-body">Steam wisps waft upwards.
+Sirens wail. Birds beep. Leaves flutter.
+Tea splashes downwards.</div>
+        </div>
+
+        <div class="haiku-section">
+          <h2 class="haiku-title">Remembrance</h2>
+          <div class="haiku-body">Snow dappled pine trees
+Open meadows, swimming pools,
+Hours on the roof.</div>
+        </div>
+
+        <div class="haiku-section">
+          <h2 class="haiku-title">Spring</h2>
+          <div class="haiku-body">Winter whorled by.
+World tilts. Sunlight settles in.
+Fungus gnats fly by.</div>
+        </div>
+
+        <div class="haiku-section">
+          <h2 class="haiku-title">Morning at Yale</h2>
+          <div class="haiku-body">School buzzing aloud.
+Sunlight dappled. All serene.
+Breathe out. Here am I.</div>
+        </div>
+
+        <p class="source-note">By Angela Xu. Morning and Remembrance first published in <em>295 Magazine</em>, Yale Asian American Cultural Center, 2026.</p>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+    <p>Angela Xu &nbsp;&middot;&nbsp; <a href="https://github.com/angelaxucx233" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
