@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>七夕 | Night of the Sevens — Angela Xu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .essay-subtitle {
+      font-family: var(--serif-nav);
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-family: var(--serif-nav);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .back-link:hover { border-color: var(--gold); }
+    .back-link::before { content: '← '; }
+    .intro-text {
+      font-size: 1.02rem;
+      line-height: 1.9;
+      color: var(--ink-soft);
+      margin-bottom: 1.4rem;
+    }
+    .poem-section {
+      margin-bottom: 3rem;
+    }
+    .poem-title-zh {
+      font-family: var(--serif-head);
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+      margin-top: 2.8rem;
+    }
+    .poem-title-en {
+      font-family: var(--serif-head);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--ink-soft);
+      margin-bottom: 1.4rem;
+    }
+    .parallel-stanza {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 1.6rem;
+      padding-left: 1.4rem;
+      border-left: 2px solid var(--rule);
+    }
+    @media (max-width: 640px) {
+      .parallel-stanza { grid-template-columns: 1fr; gap: 0.8rem; }
+    }
+    .parallel-chinese p {
+      font-size: 1.05rem;
+      line-height: 2;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+      font-family: var(--serif-body);
+    }
+    .parallel-english p {
+      font-size: 1.02rem;
+      line-height: 1.9;
+      color: var(--ink-soft);
+      margin-bottom: 0.3rem;
+    }
+    .poem-section-divider {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.8rem 0;
+    }
+    .poem-meta {
+      font-family: var(--serif-nav);
+      font-size: 0.88rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      margin-bottom: 1.6rem;
+    }
+    .source-note {
+      font-family: var(--serif-nav);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 2rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--rule);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-name"><a href="index.html">Angela Xu</a></div>
+    <div class="site-tagline">World &middot; Markets &middot; Essays &middot; Poetry &middot; Philosophy &middot; Chinese</div>
+  </header>
+
+  <div class="page-body">
+
+    <aside class="sidebar">
+      <span class="sidebar-section-label">Contents</span>
+      <nav>
+        <ul>
+          <li><a href="published.html">I. Published</a></li>
+          <li><a href="poetry.html">II. Poetry</a></li>
+          <li><a href="books.html">III. Books</a></li>
+          <li><a href="world.html">IV. World</a></li>
+          <li><a href="markets.html">V. Markets</a></li>
+          <li><a href="contemplations.html">VI. Philosophy</a></li>
+          <li><a href="chinese.html" class="active">VII. Chinese</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <a href="chinese.html" class="back-link">Chinese</a>
+
+      <p class="essay-subtitle">Classical Chinese &nbsp;&middot;&nbsp; October 2026</p>
+      <h1 class="page-title">七夕</h1>
+      <p style="font-family: var(--serif-head); font-size: 1.1rem; font-style: italic; color: var(--ink-soft); letter-spacing: 0.01em; margin-bottom: 0.5rem;">
+        Night of the Sevens
+      </p>
+      <p style="font-family: var(--serif-nav); font-size: 0.88rem; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.6rem;">
+        Four poems &nbsp;&middot;&nbsp; Tang &amp; Song Dynasties
+      </p>
+      <div class="page-rule"></div>
+
+      <div class="essay-body">
+
+        <p class="intro-text">The Night of the Sevens &ndash; otherwise known as Double Seventh Festival &ndash; is sometimes called the Chinese version of Valentine&rsquo;s Day, though I think it feels more ancient and folksy compared to the Western analogue. The holiday is rooted in a folktale of two star-crossed lovers &ndash; Cowherd Boy and Weaver Girl. You can read the full story <a href="https://pages.ucsd.edu/~dkjordan/chin/chtales/story211.html" target="_blank" rel="noopener">here</a>.</p>
+
+        <p class="intro-text">Basically, we&rsquo;ve got two lovers &ndash; the Weaving Maiden goddess who is either a daughter or a handmaid in the Celestial court and the Cowherd Boy, who is a kind-hearted, sincere, but impoverished orphan boy on earth. The Weaving Maiden weaves clouds and colors to adorn the sky while the humble Cowherd Boy unknowingly befriends a magical, deeply kind, and fatherly cow who helps him to meet the Maiden. They meet, marry, and have children together in the mortal realm. But their union offends the Heavenly Queen Mother who comes and kidnaps her daughter/maid when the Cowherd was out. The Cowherd gives chase and when he was just about to grab hold of his wife, the Heavenly Queen Mother slashes the heavens with her hairpin and creates a gap that would separate them forever &ndash; the Milky Way. Their sorrow and plight moved the living creatures of the earth, and a large train of magpies flew to the heavens to create a bridge across the Milky Way. Moved, the Queen Mother allowed them to meet once a year on the magpie bridge on the Seventh Day of the Seventh Month of the Lunar calendar &ndash; hence the name, Night of the Sevens. Traditionally, the festival focused on girls and women, and domestic skill. Girls took part in needlework competitions, displayed skill making small crafts or decorations and made wishes for skill in needlework.</p>
+
+        <p class="intro-text">There&rsquo;s something I love about this folktale &ndash; I think it captures at its core something that deeply resonates with a sense of what ought to be or what truly matters and also the realities which can be cruel and cause suffering in this world. The beautiful, capable, lonely Maiden and a humble and kind-hearted young man who live a few years together treasuring what are perhaps the worthiest things in life. Then, reality interferes to create a barrier that even the most loyal love cannot cross. At the same time, one of the things that touched me about the story is that the living creatures of the earth were touched by their love and loyalty and sorrow and helped to build a bridge across the stars. It reminds me that perhaps the world around us is more alive than we realize and the recognition of what life truly is lingers about in unexpected places.</p>
+
+        <hr class="poem-section-divider" />
+
+        <!-- POEM ONE: LI SHANGYIN -->
+        <div class="poem-section">
+
+          <p class="intro-text">This is one of my favorite Double Seventh poems. It&rsquo;s a Tang era <em>shi</em> poem that is beautifully constructed and full of double meanings. The poet wrote this poem on the Night of the Sevens in 853 after the loss of his beloved wife. Though, on another note, Li Shangyin was famed for his romantic and sensual poems, which point to the likelihood that he had other romantic encounters &ndash; so not sure how that fits in with his love for his wife!</p>
+
+          <p class="poem-title-zh">《七夕》</p>
+          <p class="poem-title-en">&ldquo;Night of the Sevens&rdquo;</p>
+          <p class="poem-meta">Li Shangyin (李商隐) &nbsp;&middot;&nbsp; Tang Dynasty, 853</p>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>鸾扇斜分凤幄开</p>
+            </div>
+            <div class="parallel-english">
+              <p>Phoenix-plumed standards slant and part;</p>
+              <p>phoenix-embroidered boudoir curtains open.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>星桥横过鹊飞回</p>
+            </div>
+            <div class="parallel-english">
+              <p>The magpies are flying home for this year</p>
+              <p>after bridging the Starry River.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>争将世上无期别</p>
+            </div>
+            <div class="parallel-english">
+              <p>Oh, how might I take the unending partings of this earthly realm</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>换得年年一度来</p>
+            </div>
+            <div class="parallel-english">
+              <p>and exchange them for meeting again every year!</p>
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="poem-section-divider" />
+
+        <!-- POEM TWO: DU MU -->
+        <div class="poem-section">
+
+          <p class="intro-text">This poem is a classic Double Seventh poem also from the Tang era in <em>shi</em> form. In contrast to Li Shangyin&rsquo;s masterpiece above, this poem uses the occasion of the Night of the Seventh to portray a very different kind of life &ndash; a luxurious but deeply lonely life at the heart of the stratified palace system of the Tang era. The unmentioned heroine of this poem could be a palace attendant or a concubine or court lady &ndash; we do not know what her background or story is. What we do know is that faithful, exclusive love is quite rare in those places, where sex and courtship often involve unequal power dynamics, positions, politics, or simply the whims of higher-ranking men.</p>
+
+          <p class="intro-text">I think this poem excels at atmosphere and imagery &ndash; using temperature, color, light, texture, the combination of an inner room and outer palace grounds to exhibit and contrast beauty, elegance, luxury on one hand and loneliness, chilliness, bleakness on the other. Finally, our heroine lies down, bored, perhaps melancholically accepting, and gazes at the stars of the sincere lovers above. She is in her room alone and outside, the palace is unforgiving and cold.</p>
+
+          <p class="poem-title-zh">《秋夕》</p>
+          <p class="poem-title-en">&ldquo;Autumn Evening&rdquo;</p>
+          <p class="poem-meta">Du Mu (杜牧) &nbsp;&middot;&nbsp; Tang Dynasty, c. 9th century</p>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>银烛秋光冷画屏</p>
+            </div>
+            <div class="parallel-english">
+              <p>The silver candlelight and waning autumn glow</p>
+              <p>chills the painted screen.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>轻罗小扇扑流萤</p>
+            </div>
+            <div class="parallel-english">
+              <p>She bats at fireflies</p>
+              <p>with a delicate silken fan.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>天阶夜色凉如水</p>
+            </div>
+            <div class="parallel-english">
+              <p>The night aspect</p>
+              <p>of palace terraces</p>
+              <p>is chilly like water.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>卧看牵牛织女星</p>
+            </div>
+            <div class="parallel-english">
+              <p>She lies down and gazes at</p>
+              <p>the Cowherd and Weaving Maiden.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="poem-section-divider" />
+
+        <!-- POEM THREE: QIN GUAN -->
+        <div class="poem-section">
+
+          <p class="intro-text">This is another famous poem on the Night of the Seventh and its folktale. Written in the Song Dynasty in <em>ci</em> form, both form and tone contain the fluidity and emotional expression emblematic of the <em>ci</em>. Interestingly, Qin has a different take on true love &ndash; in his view, few moments of intense, transcendent love can be truer &ndash; or certainly no less true &ndash; than a lifetime of companionship across ordinary days. I&rsquo;m not sure what I think about that. I still can&rsquo;t help but feel that perhaps a lifetime of ordinary days is still the fullest and most satisfying fulfillment of that love. Honestly, I just don&rsquo;t have the experience to tell!</p>
+
+          <p class="poem-title-zh">《鵲桥仙 &middot; 纤云弄巧》</p>
+          <p class="poem-title-en">&ldquo;Wispy Clouds Weave Playfully&rdquo;</p>
+          <p class="poem-meta">Qin Guan (秦观) &nbsp;&middot;&nbsp; Song Dynasty, 1097</p>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>纤云弄巧，飞星传恨，银汉迢迢暗度。</p>
+            </div>
+            <div class="parallel-english">
+              <p>Wispy clouds weave playfully;</p>
+              <p>shooting stars carry our painful yearning.</p>
+              <p>We silently cross the distant Milky River.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>金风玉露一相逢，便胜却人间无数。</p>
+            </div>
+            <div class="parallel-english">
+              <p>One meeting amid the golden autumnal wind</p>
+              <p>and amongst jeweled dew &ndash;</p>
+              <p>outweighs countless encounters on earth.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>柔情似水，佳期如梦，忍顾鹊桥归路。</p>
+            </div>
+            <div class="parallel-english">
+              <p>Tender ardor like water;</p>
+              <p>a blissful interlude like a dream.</p>
+              <p>Can I bear to glance back at the return path across the magpie bridge?</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>两情若是久长时，又岂在朝朝暮暮。</p>
+            </div>
+            <div class="parallel-english">
+              <p>If two affectionate hearts long endure,</p>
+              <p>then surely, love cannot be measured only in the passing of ordinary days?</p>
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="poem-section-divider" />
+
+        <!-- POEM FOUR: LI QINGZHAO -->
+        <div class="poem-section">
+
+          <p class="intro-text">Li Qingzhao is probably China&rsquo;s foremost female canonical poet. Her life was marked by a beautiful first love and marriage to her husband Zhao Mingcheng, with whom she shared scholarly pursuits and passions, progressing to long separation due to his official duties and then eventually war, exile, and widowhood due to the fall of the Northern Song, and a disastrous second marriage which ended in lawsuit and divorce. Her poems are famously&hellip;very sad. Even this poem, which was written before widowhood, carries the sense that she feels trapped under a very dark and heavy cloud which never lifts. Like many literary geniuses before and after her, I think this would probably qualify as depression today.</p>
+
+          <p class="intro-text">I think this poem &ndash; and likely many of her poems &ndash; are defined by a sense of utter abandonment and entrapment, best expressed in the line &ldquo;barred and bolted a thousand times&rdquo; below. Her pain is so deep that she can&rsquo;t help but constantly ruminate on it &ndash; to the extent that even meeting her beloved cannot assuage her &ldquo;parting grief.&rdquo; In the end, she remains trapped in her pain and settles in a state of dull emotional turbulence as displayed in the last line. It is truly a beautiful piece of literary work, but it also describes truly a very distressed interior state. My heart goes out to her and I wish she were able to experience some relief and joy.</p>
+
+          <p class="poem-title-zh">《行香子 &middot; 七夕》</p>
+          <p class="poem-title-en">&ldquo;Night of the Sevens&rdquo;</p>
+          <p class="poem-meta">Li Qingzhao (李清照) &nbsp;&middot;&nbsp; Song Dynasty, 1129 (uncertain)</p>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>草际鸣蛩，惊落梧桐，</p>
+              <p>正人间、天上愁浓。</p>
+            </div>
+            <div class="parallel-english">
+              <p>At the grass&rsquo;s edge, crickets chirp</p>
+              <p>and startle the parasol leaves</p>
+              <p>into falling.</p>
+              <p>Presently, grief hangs thick</p>
+              <p>on earth as in heaven.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>云阶月地，关锁千重。</p>
+            </div>
+            <div class="parallel-english">
+              <p>Cloud-pillowed stairs</p>
+              <p>on moonlit ground &ndash;</p>
+              <p>barred and bolted a thousand times.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>纵浮槎来，浮槎去，不相逢。</p>
+            </div>
+            <div class="parallel-english">
+              <p>Though the floating raft comes,</p>
+              <p>the floating raft goes,</p>
+              <p>we meet not.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>星桥鹊驾，经年才见，</p>
+              <p>想离情、别恨难穷。</p>
+            </div>
+            <div class="parallel-english">
+              <p>Magpies mount up</p>
+              <p>to bridge the stars.</p>
+              <p>A year has passed</p>
+              <p>since our last meeting.</p>
+              <p>Ruminating on our parting grief,</p>
+              <p>unable to exhaust its bitterness.</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>牵牛织女，莫是离中。</p>
+            </div>
+            <div class="parallel-english">
+              <p>The Cowherd</p>
+              <p>and Weaver Maid &ndash;</p>
+              <p>are they separated still?</p>
+            </div>
+          </div>
+
+          <div class="parallel-stanza">
+            <div class="parallel-chinese">
+              <p>甚霎儿晴，霎儿雨，霎儿风。</p>
+            </div>
+            <div class="parallel-english">
+              <p>Why is it that it&rsquo;s clear one moment,</p>
+              <p>rainy one moment,</p>
+              <p>and windy still the next?</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="source-note">Translations by Angela Xu. Original poems by Li Shangyin (李商隐, 813&ndash;858), Du Mu (杜牧, 803&ndash;852), Qin Guan (秦观, 1049&ndash;1100), and Li Qingzhao (李清照, 1084&ndash;c.1155).</p>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+    <p>Angela Xu &nbsp;&middot;&nbsp; <a href="https://github.com/angelaxucx233" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
